@@ -1,8 +1,10 @@
-<h1>List</h1>
+<h1>Bulletin / Announcements</h1>
 <ul>
   <% @dates.each do |date| %>
     <li>
-      Announcements:<a href='http://rbctoday.com/wp-content/uploads/<%= date[:date_stamp] %>-atw.pdf'><%= date[:name] %></a>
+      <%= date[:name] %> -
+        <a href='http://rbctoday.com/wp-content/uploads/<%= date[:date_stamp] %>-atw.pdf'>Bulletin</a> /
+        <a href='http://rbctoday.com/wp-content/uploads/<%= date[:date_stamp] %>-atw.pdf'>Announcements</a>
     </li>
   <% end %>
 </ul>
